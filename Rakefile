@@ -17,28 +17,13 @@ Jeweler::Tasks.new do |gem|
   gem.name = "database-migrator"
   gem.homepage = "http://github.com/MirkoCindric/database-migrator"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Migrates your development & test databases in one action}
+  gem.description = %Q{Sick of having to manually migrate both your development and test db? well now you can do it in 1 call}
   gem.email = "michael.cindric@sentia.com.au"
   gem.authors = ["Michael Cindric"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
-
-require 'rake/testtask'
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
-end
 
 task :default => :test
 
