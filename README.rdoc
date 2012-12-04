@@ -1,6 +1,8 @@
 = database-migrator
 
-Description goes here.
+To install
+
+add gem "database-migrator" to your gemfile
 
 == Contributing to database-migrator
  
